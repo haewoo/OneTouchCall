@@ -53,10 +53,7 @@ public class OneTouchContentProvider extends ContentProvider {
         
     }
     
-//    public FavoriteDB(Context context){
-//        this.mCtx = context;
-//    }
-//    
+  
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         String tableName = null;

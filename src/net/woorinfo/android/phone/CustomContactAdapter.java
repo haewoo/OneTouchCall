@@ -9,7 +9,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.provider.ContactsContract;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
@@ -24,8 +23,6 @@ public class CustomContactAdapter extends SimpleCursorAdapter {
 
     @Override
     public void setViewImage(ImageView v, String value) {
-        Log.d("KANG", "ID : " + value);
-        
         Uri uri = ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI, Long.parseLong(value));
         InputStream input = ContactsContract.Contacts
                 .openContactPhotoInputStream(v.getContext().getContentResolver(), uri);

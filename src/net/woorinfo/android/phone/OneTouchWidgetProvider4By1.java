@@ -17,8 +17,6 @@ public class OneTouchWidgetProvider4By1 extends AppWidgetProvider {
         R.id.btn2,
         R.id.btn3,
         R.id.btn4
-//        ,
-//        R.id.btn5
     };
 
     @Override

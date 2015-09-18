@@ -17,7 +17,6 @@ import android.net.Uri;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Data;
-import android.util.Log;
 import android.widget.RemoteViews;
 
 public class OneTouchWidgetProvider2By2 extends AppWidgetProvider {
@@ -25,17 +24,12 @@ public class OneTouchWidgetProvider2By2 extends AppWidgetProvider {
     public void onReceive(Context context, Intent intent) {
         super.onReceive(context, intent);
         
-        Log.d("KANG", "Action : " + intent.getAction());
-        
         if ( FavoriteSelectActivity.ACTION_APPWIDGET_UPDATE_2BY_2.equals(intent.getAction()) ) {
             AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
             
             int [] appIds = appWidgetManager.getAppWidgetIds(new ComponentName(context, OneTouchWidgetProvider2By2.class));
             int widgetID = appIds[appIds.length-1];
             int receivedWidgetId = intent.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, 0);
-            
-            Log.d("KANG", "onreceived WidgetID : " + widgetID);
-            Log.d("KANG", "onreceived Intent WidgetID : " + intent.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, 0));
             
             if ( widgetID == 0 ) {
                 return;
@@ -95,7 +89,6 @@ public class OneTouchWidgetProvider2By2 extends AppWidgetProvider {
             long contactId = pref.getLong(Phone.CONTACT_ID + "_" + appWidgetId, 0L);
             String dispName = pref.getString(Data.DISPLAY_NAME + "_" + appWidgetId, "Who?");
             String phoneNumber = pref.getString(Phone.NUMBER + "_" + appWidgetId, "");
-            Log.d("KANG", "Intent.putExtra : " + appWidgetId + ", " + contactId + ", " + dispName + ", " + phoneNumber);
 
             if ( dispName == null || "Who?".equals(dispName)) {
                 Intent intent = new Intent(context, FavoriteSelectActivity.class);
