@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:background="@drawable/widget_bg_normal"
+    android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/myFavoriteLayout" android:layout_height="wrap_content" android:gravity="center">
+    
+    <Button android:id="@+id/btn1" android:text="Who?"
+        android:layout_width="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:layout_height="72dp" 
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+    <Button android:id="@+id/btn2" android:text="Who?"
+        android:visibility="visible" android:layout_height="72dp"
+        android:layout_width="wrap_content" android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn1" 
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+    <Button android:id="@+id/btn3" android:text="Who?"
+        android:visibility="visible" android:layout_height="72dp"
+        android:layout_width="wrap_content" android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn2"
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+    <Button android:id="@+id/btn4" android:text="Who?"
+        android:visibility="visible" android:layout_height="72dp"
+        android:layout_width="wrap_content" android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn3"
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+<!-- 
+    <Button android:id="@+id/btn5" android:text="Who?"
+        android:visibility="visible" android:layout_width="wrap_content" android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn4" android:layout_height="72dp"
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+ -->
+    <Button android:id="@+id/btn6" android:text="Who?"
+        android:visibility="gone" android:layout_height="72dp"
+        android:layout_width="wrap_content" android:layout_below="@+id/btn1"
+        android:layout_alignParentLeft="true"
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+    <Button android:id="@+id/btn7" android:text="Who?"
+        android:visibility="gone" android:layout_height="72dp"
+        android:layout_width="wrap_content" android:layout_below="@+id/btn2"
+        android:layout_toRightOf="@+id/btn6"
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+    <Button android:id="@+id/btn8" android:text="Who?"
+        android:visibility="gone" android:layout_height="72dp"
+        android:layout_width="wrap_content" android:layout_below="@+id/btn3"
+        android:layout_toRightOf="@+id/btn7"
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+    <Button android:id="@+id/btn9" android:text="Who?"
+        android:visibility="gone" android:layout_height="72dp"
+        android:layout_width="wrap_content" android:layout_below="@+id/btn4"
+        android:layout_toRightOf="@+id/btn8"
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+<!--         
+    <Button android:id="@+id/btn10" android:text="Who?"
+        android:visibility="visible" android:layout_height="72dp"
+        android:layout_width="wrap_content" android:layout_below="@+id/btn5"
+        android:layout_toRightOf="@+id/btn9"
+        android:minWidth="72dip"
+        android:maxWidth="74dip"/>
+ -->
+</RelativeLayout>

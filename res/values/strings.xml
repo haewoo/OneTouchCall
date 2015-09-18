@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OneTouchCall</string>
+    <string name="app_name_1_by_1">OneTouchCall 1X1</string>
+    <string name="app_name_2_by_2">OneTouchCall 2X2</string>
+    <string name="app_name_4_by_1">OneTouchCall 4X1</string>
+    <string name="app_name_4_by_2">OneTouchCall 4X2</string>
+    <string name="editContactDescription">Edit contact</string>
+    <string name="okDescription">OK</string>
+    <string name="cancelDescription">Cancel</string>
+    <string name="deleteContactDescription">Delete Contact</string>
+    <string name="addContactDescription">Add Contact</string>
+    <string name="warningResistrationMessage">Registration is possible up to 8 contacts.</string>
+    <string name="searchResultNotSupport">Search result not support.</string>
+    <string name="name">Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="noData">No Data.\nPress the MENU key to register your phone number.</string>
+    <string name="nameColon">Name : </string>
+    <string name="phoneColon">Phone : </string>
+</resources>
